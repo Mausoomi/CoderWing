@@ -1,0 +1,40 @@
+h1.policyHD {
+    font-size: 29px;
+    font-weight: 600;
+    
+}
+h2.subHdpolicy {
+    font-size: 25px;
+    color: #a2bbee;
+}
+.para{
+        color: #b9b9b9;
+}
+
+@media screen and (max-width: 978px) {
+h1.policyHD {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.para {
+    color: #b9b9b9;
+    font-size: 17px;
+}
+}
+
+@media screen and (max-width: 440px) {
+h1.policyHD {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+h2.subHdpolicy {
+    font-size: 19px;
+    color: #a2bbee;
+}
+.para {
+    color: #b9b9b9;
+    font-size: 14px;
+}
+}

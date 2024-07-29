@@ -1,0 +1,89 @@
+.aboutUsContact {
+  width: 80%;
+  margin: 0 auto;
+  background: #9791b429;
+  padding: 2rem;
+  border-radius: 35px;
+}
+
+.InnerAboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.InnerAboutUsone {
+  width: 60%;
+}
+
+.innerAboutusTwo {
+  width: 40%;
+}
+.innerAboutusTwo img{
+  border-radius: 24px;
+}    
+.offerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+}
+.dataBoxMain {
+     width: 30%;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: flex-start;
+    gap: 12px;
+    border-radius: 17px;
+    padding: 1.5rem;
+    /* box-shadow: 0px 4px 30px 0px #2B1B121F; */
+    box-shadow: 4px 4px 4px 4px #29252540;;
+    background: #6161fb;
+        -webkit-transition: all 0.3s ease;
+}
+.dataBoxMain:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;}
+
+    .hdAboutUs{
+      font-style: 20px;
+    }
+.hdAboutUs {
+    font-size: 27px;
+    font-weight: 700;
+    margin: 1.5rem 0rem;
+    color: #6464eb;
+}
+
+.dataBoxMain p{
+  font-size: 14px;
+}
+h3.OfferHd {
+    font-size: 20px;
+    font-weight: 800;
+}
+@media screen and (max-width: 1024px) {
+    .dataBoxMain{width: 46%;}  
+}
+
+@media screen and (max-width: 900px) {
+  .aboutUsContact {
+    width: 90%;
+  }
+ 
+}
+@media screen and (max-width: 768px) {
+ .InnerAboutUs {
+    flex-direction: column-reverse;
+  }
+  .InnerAboutUsone{
+    width: 100%;
+  }
+  .innerAboutusTwo {
+    width: 49%;
+}
+}

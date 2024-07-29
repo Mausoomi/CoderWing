@@ -1,0 +1,273 @@
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #323232cc;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #000000;
+  /* border-radius: 10px; */
+  position: relative;
+  /* border: 1px solid white; */
+  padding: 1rem;
+  /* border-image-source: linear-gradient(94.94deg, #FFFFFF -11.51%, #848484 97.43%); */
+  width: 70%;
+  /* overflow: scroll; */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(32 32 32);
+}
+.popup h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+button.cross {
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  font-size: 19px;
+  color: #fff;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+}
+.innerPopupBox {
+  display: flex;
+
+  justify-content: center;
+}
+.MainBoxDetailPg {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.PopupOne {
+  width: 50%;
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.PopUptwo {
+  width: 50%;
+  padding:0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+}
+.closepopUp {
+  display: none;
+}
+.openpopUp {
+  display: flex;
+  overflow: auto;
+  align-items:center;
+}
+.popupDiv {
+    width: 100%;
+    height: 100%;
+}
+.popupDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fearureList {
+  display: flex;
+  justify-content: flex-start;
+}
+.tickMArk {
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.MainCoursepg {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+}
+.descrptnBox {
+  display: flex;
+  justify-content: space-between;
+}
+.courseBox1 {
+  width: 70%;
+}
+.courseBox2 {
+  width: 30%;
+  border: 0.5px solid #cccccc;
+  padding: 2rem;
+  border-radius: 18px;
+  /* background: #262b4c; */
+  background-color: black;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sideItem {
+  display: flex;
+  align-items: baseline;
+  /* justify-content: space-between; */
+
+  width: 100%;
+  gap: 19px;
+}
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1rem;
+}
+.typed-cursor {
+  opacity: 0.5 !important;
+}
+
+.CourseDetailPg {
+  width: 90%;
+
+  margin: 0 auto;
+  border: 1px solid;
+  padding: 2rem;
+  border-radius: 27px;
+}
+.subFullName {
+  margin: 0px !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
+/* .icons {
+    width: 6%;
+}
+
+.technologies {
+    width: 41%;
+}
+
+.moreItem {
+    width: 43%;
+} */
+@media screen and (max-width: 1162px) {
+  /* .CourseDetailPg{
+           max-width: 900px;} */
+  .MainCoursepg {
+    padding: 4rem;
+    flex-direction: column;
+  }
+  .courseBox1 {
+    width: 100%;
+  }
+  .courseBox2 {
+    width: 100%;
+  }
+  .MainCoursepg {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .popup-backdrop {
+    /* align-items: baseline; */
+  }
+  .boldHding {
+    font-size: 36px !important;
+    font-weight: 700 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .innerPopupBox {
+    flex-direction: column;
+  }
+  .PopupOne {
+    width: 100%;
+  }
+  .PopUptwo {
+    width: 100%;
+    padding: 0;
+  }
+
+  .MainCoursepg {
+    padding: 0rem;
+    flex-direction: column;
+  }
+  .crossSign {
+    margin: 1rem;
+  }
+  .boldHding {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+  }
+  /* .CourseDetailPg{
+           max-width: 800px;} */
+}
+/* @media screen and (max-width: 700px) {
+    .CourseDetailPg {
+        max-width: 581px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .CourseDetailPg {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .CourseDetailPg {
+        max-width: 300px;
+    }
+} */
+
+@media screen and (max-width: 900px) {
+  .CourseDetailPg {
+    padding: 1rem;
+  }
+      .popup-backdrop {
+        align-items:center;
+    }
+    .openpopUp {
+      align-items: baseline;
+    }
+}
+@media screen and (max-width: 600px) {
+  .CourseDetailPg {
+    width: 88%;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 27px;
+  }
+  .CourseDetailPg {
+    padding: 1rem;
+  }
+  .boldHding {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+  }
+     .popup {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+  .boldHding {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+  }
+}

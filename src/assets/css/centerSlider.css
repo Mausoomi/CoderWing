@@ -1,0 +1,156 @@
+.cardSlider .card-button {
+  position: absolute;
+  top: 43%;
+  box-shadow: none;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+}
+.cardSlider.card-button.right {
+  right: 0%;
+}
+.react-stacked-center-carousel {
+  padding: 20px 0;
+}
+
+.card-card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 100%;
+  height: 350px;
+  position: relative;
+
+  perspective: 1000px;
+  box-shadow: unset;
+  background-color: transparent;
+}
+
+.card-card.center {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+.card-card .center .card-card:hover {
+  transform: scale(1.05);
+}
+
+.react-stacked-center-carousel-slide-0 .card-card {
+  cursor: default;
+}
+
+.react-stacked-center-carousel-slide-0 .card-card:hover {
+  transform: none;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.card-card .card-overlay {
+  user-select: none;
+  position: absolute;
+  background-color: #00000099;
+  transition: all 300ms ease;
+}
+
+.card-card:hover .card-overlay {
+  background-color: #0000002d;
+}
+
+.react-stacked-center-carousel-slide-0 .card-overlay {
+  background-color: #00000099 !important;
+}
+
+.card-card .cover-image {
+  object-fit: cover;
+  height: 350px !important;
+  width: 100%;
+}
+    
+
+.card-card .cover {
+  position: absolute;
+  transition: opacity 300ms ease;
+  background-color: transparent;
+}
+
+.react-stacked-center-carousel-slide-0 .card-card .cover {
+  transition: opacity 300ms ease, z-index 0ms 300ms;
+}
+
+.card-card .cover.on {
+  opacity: 1;
+  z-index: 1;
+  transform-style: preserve-3d;
+  background-color: transparent;
+}
+
+.card-card .cover.on.right {
+  transform: rotateY(30deg);
+}
+.card-card .cover.on.left {
+  transform: rotateY(-30deg);
+}
+
+.card-card .cover.off {
+  opacity: 0;
+  z-index: -1;
+}
+
+.card-card .detail {
+  display: flex;
+}
+.card-card .video {
+  width: 20%;
+}
+.card-card .discription {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.data.fill.off {
+  background-color: white;
+}
+
+.data.fill.on {
+  background-color: white;
+  transform-style: preserve-3d;
+}
+
+.data.fill.on.left {
+  background-color: white;
+  transform: rotateY(-30deg);
+}
+
+.data.fill.on.right {
+  background-color: white;
+  transform: rotateY(30deg);
+}
+
+
+@media screen and (max-width: 600px) {
+    .react-stacked-center-carousel-slide-0 {
+      
+    left: calc(50% - 154px) !important;
+  
+    width: 309px !important;
+    
+    }
+   
+}
+/* @media screen and (max-width: 480px) {
+ .react-stacked-center-carousel{
+      width: 322px !important;
+
+    }
+      .react-stacked-center-carousel-slide-0 {
+      
+    left: calc(50% - 120px) !important;
+  
+    width: 280px !important;
+    
+    }
+} */
